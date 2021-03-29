@@ -11,7 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Client.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Produit.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/page404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mescommandes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Theme.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ThemeBD.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +41,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,11 +69,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ProjetMagasin\admin\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ProjetMagasin" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +107,21 @@
       <option name="presentableId" value="Default" />
       <updated>1615730468951</updated>
       <workItem from="1615730469985" duration="1008000" />
-      <workItem from="1615731740292" duration="46000" />
+      <workItem from="1615731740292" duration="771000" />
+      <workItem from="1615813859055" duration="94000" />
+      <workItem from="1616621823499" duration="293000" />
+      <workItem from="1616708956954" duration="374000" />
+      <workItem from="1616752730599" duration="788000" />
+      <workItem from="1616779185670" duration="47000" />
+      <workItem from="1616779269028" duration="24000" />
+      <workItem from="1616855108816" duration="2915000" />
+      <workItem from="1616865242009" duration="201000" />
+      <workItem from="1616870402133" duration="600000" />
+      <workItem from="1616886524660" duration="325000" />
+      <workItem from="1616887327568" duration="7000" />
+      <workItem from="1616934779354" duration="4995000" />
+      <workItem from="1616958200875" duration="741000" />
+      <workItem from="1616958987621" duration="268000" />
     </task>
     <servers />
   </component>
@@ -76,9 +141,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1615730571118">
+    <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616858591906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1615730571118" />
+    <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1616858591906" />
+    <state x="463" y="81" key="FileChooserDialogImpl" timestamp="1616779276611">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="81" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1616779276611" />
+    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard" timestamp="1616779287200">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1616779287200" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1616959088522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1616959088522" />
   </component>
 </project>

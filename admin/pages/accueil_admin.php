@@ -1,1 +1,1 @@
-<?php
+Accueil admin

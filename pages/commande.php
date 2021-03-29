@@ -1,5 +1,6 @@
-<div class="coman">
-    <p><a href="index.php?page=affichage_commande.php">Mes Commandes </a>
+<br>
+<div class="btn-group">
+    <a href="index.php?page=mescommandes.php" class="btn btn-primary">Voir mes commandes</a>
 </div>
 <form method="GET" action="<?php print $_SERVER['PHP_SELF'];?>">
     </br>

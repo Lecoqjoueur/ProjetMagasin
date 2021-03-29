@@ -1,17 +1,17 @@
 <h2>TechnoShop: le site de vente de Technologies</h2>
 <?php
-//$liste = new ThemeBD($cnx);
-//$liste -> getTheme();
+$liste = new ClientBD($cnx);
+$liste -> getClient()
 ?>
 <p>&nbsp;</p>
 <div class="container">
    <div class="card text-center">
 
         <div class="card-body">
-            <h5 class="card-title">Bienvenue sur TechnoShop</h5>
+            <h5 class="card-title">Bienvenue sur le site TechnoShop</h5>
             <p class="card-text">Vous etes sur TechnoShop, le site qui vend diverses technologies qui</p>
             <p>peuvent vous intéresser que celq soit des PC, des consoles, des smartphones ou autres </p>
-            <a href="#" class="btn btn-primary">Se connecter</a>
+            <a href="index.php?page=login.php" class="btn btn-primary">Se connecter</a>
         </div>
 
     </div>
@@ -24,6 +24,9 @@
                 <p class="card-text">Nous vendons des PC, que cela soit des PC portable ou de bureau.
                     Que cela soit uniquement pour le travail ou des PC Gamer pour vos hobbies. On en a pour tout le monde.</p>
             </div>
+            <div class="btn-group">
+                <a href="index.php?page=pc.php" class="btn btn-primary">Voir les PC</a>
+            </div>
 
         </div>
         <div class="card">
@@ -33,6 +36,9 @@
                 <p class="card-text">Dans la partie console, vous trouverez toutes les consoles récentes que cela soit la PS5, XBOX X ou la Switch.
                     Ainsi que des consoles rétros comme la NES</p>
             </div>
+            <div class="btn-group">
+                <a href="index.php?page=console.php" class="btn btn-primary">Voir les consoles</a>
+            </div>
 
         </div>
         <div class="card">
@@ -41,6 +47,9 @@
                 <h5 class="card-title">Smartphones <i class="far fa-grin-alt red"></i></h5>
                 <p class="card-text">Dans la catégorie Smartphone. Vous trouverez des téléphones à tous les prix.
                 Que cela soit du haut de gamme avec les Iphone ou les Samsung. Ou des Smartphones pour les plus petits budgets.</p>
+            </div>
+            <div class="btn-group">
+                <a href="index.php?page=smartphone.php" class="btn btn-primary">Voir les smartphomes</a>
             </div>
 
         </div>

@@ -17,15 +17,18 @@
                         Liste des produits
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">PC</a></li>
-                        <li><a class="dropdown-item" href="#">Console</a></li>
-                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=pc.php">PC</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=console.php">Console</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=smartphone.php">Smartphone</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index.php?page=produit.php">Tout afficher</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.php?page=commande.php">Effectuer une commande</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.php?page=infos.php">Coordonnées</a>
                 </li>
             </ul>
             <!--<form class="d-flex">
