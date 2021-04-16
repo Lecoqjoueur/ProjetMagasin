@@ -7,7 +7,6 @@ class Connexion {
         if(!self::$_instance){
             try{
                 self::$_instance = new PDO($dsn,$user,$password);
-                print "Connecté";
             }catch(PDOException $e){
                 print "Echec : ".$e->getMessage();
             }

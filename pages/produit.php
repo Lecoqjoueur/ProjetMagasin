@@ -6,45 +6,37 @@ $liste =  $prod->getProduit();
 $nbr =count ($liste);
 ?>
 
-<div class="album py-5 bg-light">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <br>
+            <table class="prod1">
             <?php
             for($i=0;$i<$nbr;$i++){
+            ?>
 
-                ?>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="./admin/images/<?php print $liste[$i]->image; ?>" alt="Image"/>
-
-
-                        <div class="card-body">
-                            <p class="card-text">
+                  <tr class="prod2">
+                        <td class="prod3">
                                 <?php
                                 print $liste[$i]->nom;
                                 ?>
-                            <br>
+                        </td>
+                        <td class="prod3">
                                 <?php
                                 print $liste[$i]->description;
                                 ?>
-                                <br>
+                        </td>
+                        <td class="prod3">
                                 <?php
                                 print $liste[$i]->prix;
                                 ?>
                                 €
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
+                        </td>
+                        <td>
                                 <div class="btn-group">
-                                    <a href="index.php?page=commande.php" class="btn btn-primary">Commander</a>
+                                    <a href="index.php?page=commande.php">Commander</a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </td>
+                  </tr>
                 <?php
             }
             ?>
-        </div>
-    </div>
-</div>
+            </table>
 

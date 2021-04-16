@@ -11,20 +11,18 @@ class ClientBD extends Client
         $this->_db = $cnx;
     }
 
-    public function getClient()
-    {
-        $query = "select * from client";
-        //$_resultset = $this->_db->query($query);
-        $_resultset = $this->_db->prepare($query);
-        $_resultset->execute();
-
-        while ($d = $_resultset->fetch()) {
-            $_data[] = new Client($d);
-
+    public function getClient($username, $mdp){
+        try {
+            $query = "select is_client(:username,:mdp) as retour";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':username', $username);
+            $_resultset->bindValue(':mdp', $mdp);//car password crypté en md5
+            $_resultset->execute();
+            $retour= $_resultset->fetchColumn(0);
+            return $retour;
+        }catch(PDOException $e){
+            print "Echec ".$e->getMessage();
         }
-        //var_dump($_data);
-        return $_data;
-        //$_data = $_resultset->fetchAll();
     }
 }
 

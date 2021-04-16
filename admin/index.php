@@ -16,13 +16,13 @@ $cnx = Connexion::getInstance($dsn,$user,$password);
     <link rel="stylesheet" href="./admin/lib/css/custom.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./admin/lib/js/fonctions_jquery.js"></script>
+    <script src="./admin/lib/js/fonctions_infos.js"></script>
 </head>
 
 <body>
 <div id="page">
     <header class="img_header">
-
+        <a href="index.php?page=disconnect.php">Déconnexion</a>
     </header>
     <section id="colGauche">
         <nav>

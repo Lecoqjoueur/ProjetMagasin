@@ -1,0 +1,16 @@
+.com{
+    background-color:lightgray;
+    margin :10px 50px ;
+    padding :15px 10px;
+}
+.prod1{
+    border:solid 1px #000F;
+    margin-left: 100px;
+}
+.prod2{
+    border:solid 1px blue;
+}
+.prod3{
+    border:solid 1px blue;
+    padding: 10px;
+}

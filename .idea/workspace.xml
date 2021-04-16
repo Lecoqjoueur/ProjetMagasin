@@ -11,28 +11,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Client.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Produit.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/page404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/mescommandes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/dumps/plpgsql/is_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxDetailProduit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Categorie.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/CategorieBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/verifier_connexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/disconnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/produit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/compte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/recherche.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Theme.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ThemeBD.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/php/public_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infos.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pc.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/smartphone.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -70,6 +78,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,25 +87,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ProjetMagasin\admin\pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ProjetMagasin" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ProjetMagasin\admin\pages" />
+      <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php" />
+      <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php\classes" />
+      <recent name="C:\laragon\www\ProjetMagasin\admin\dumps\plpgsql" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,6 +121,36 @@
       <workItem from="1616934779354" duration="4995000" />
       <workItem from="1616958200875" duration="741000" />
       <workItem from="1616958987621" duration="268000" />
+      <workItem from="1617019277022" duration="846000" />
+      <workItem from="1617027360163" duration="275000" />
+      <workItem from="1617033219085" duration="692000" />
+      <workItem from="1617201760446" duration="893000" />
+      <workItem from="1617622206433" duration="1980000" />
+      <workItem from="1617797286765" duration="2305000" />
+      <workItem from="1617809860718" duration="676000" />
+      <workItem from="1617812834873" duration="345000" />
+      <workItem from="1617834433805" duration="85000" />
+      <workItem from="1617834542279" duration="198000" />
+      <workItem from="1617834927540" duration="201000" />
+      <workItem from="1617882711784" duration="2628000" />
+      <workItem from="1617975671810" duration="1153000" />
+      <workItem from="1617976868541" duration="16000" />
+      <workItem from="1618001658848" duration="1168000" />
+      <workItem from="1618010938974" duration="693000" />
+      <workItem from="1618011724419" duration="84000" />
+      <workItem from="1618055027707" duration="609000" />
+      <workItem from="1618091631200" duration="116000" />
+      <workItem from="1618181025740" duration="3850000" />
+      <workItem from="1618265189522" duration="427000" />
+      <workItem from="1618265985960" duration="505000" />
+      <workItem from="1618267274898" duration="1207000" />
+      <workItem from="1618302847981" duration="1628000" />
+      <workItem from="1618326947140" duration="319000" />
+      <workItem from="1618411034141" duration="2218000" />
+      <workItem from="1618414911257" duration="91000" />
+      <workItem from="1618531831202" duration="662000" />
+      <workItem from="1618532803226" duration="1561000" />
+      <workItem from="1618594271294" duration="382000" />
     </task>
     <servers />
   </component>
@@ -145,17 +174,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1616858591906" />
-    <state x="463" y="81" key="FileChooserDialogImpl" timestamp="1616779276611">
+    <state x="463" y="81" key="FileChooserDialogImpl" timestamp="1618413303199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="81" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1616779276611" />
-    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard" timestamp="1616779287200">
+    <state x="463" y="81" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618413303199" />
+    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard" timestamp="1618413311399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1616779287200" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1616959088522">
+    <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1618413311399" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1618183970754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1616959088522" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1618183970754" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1617623647195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1617623647195" />
   </component>
 </project>

@@ -1,18 +1,36 @@
+<?php
+$prod = new ProduitBD($cnx);
+
+$liste =  $prod->getProduit();
+
+$nbr =count ($liste);
+?>
+
 <br>
 <div class="btn-group">
     <a href="index.php?page=mescommandes.php" class="btn btn-primary">Voir mes commandes</a>
 </div>
 <form method="GET" action="<?php print $_SERVER['PHP_SELF'];?>">
     </br>
-    <p>Veuillez remplir tous les champs avant de confirmer</p>
-    <fieldset>
+    <p>*Veuillez remplir tous les champs avant de confirmer*</p>
+    <fieldset class="com">
         <legend>Commande</legend>
-        <p>Petit rappel pour l'identifiant des différents produits proposés</p>
-
+        <br><br>
         <table>
             <tr>
-                <th><label for="quantite">  Numéro du produit   </label></th>
-                <th><input type="number" id ="num" name="num"/></th>
+                <select class="com1" name="numero">
+                    <?php
+                    for($i=0;$i<$nbr;$i++)
+                    {
+                        ?><option><?php
+                        print $liste[$i]->nom;
+                        ?></option>
+                        <?php
+                    }
+                    ?>
+                </select>
+                <!--<th><label for="quantite">  Numéro du produit   </label></th>-->
+                <!--<th><input type="number" id ="num" name="num"/></th>-->
             </tr>
             <tr>
              <th><label for="quantite">  Quantité  </label></th>
@@ -21,8 +39,7 @@
         </table>
     </fieldset>
     </br>
-    </br>
-    <fieldset class="com2">
+       <fieldset class="com">
         <legend>Informations de la carte bancaire</legend>
         </br>
         <fieldset class="com3">

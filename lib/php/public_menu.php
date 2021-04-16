@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ProjetTech</a>
+        <a class="navbar-brand" href="index.php?page=accueil.php">TechnoShop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,6 +22,7 @@
                         <li><a class="dropdown-item" href="index.php?page=smartphone.php">Smartphone</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index.php?page=produit.php">Tout afficher</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=recherche.php">Rechercher</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
