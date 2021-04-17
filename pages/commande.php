@@ -1,4 +1,7 @@
 <?php
+include ('./lib/php/verifier_connexion.php');
+if(isset($_SESSION['client'])){
+
 $prod = new ProduitBD($cnx);
 
 $liste =  $prod->getProduit();
@@ -67,3 +70,6 @@ $nbr =count ($liste);
     <input type="reset" name="annuler" value="Annuler"/>
     </br>
 </form>
+<?php
+}
+?>

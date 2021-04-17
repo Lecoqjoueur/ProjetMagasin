@@ -1,13 +1,22 @@
 <h1>Bienvenue dans la partie "Connexion au Compte"</h1>
+<header class="img_header">
+    <a href="index.php?page=disconnect.php">Déconnexion</a>
+</header>
 <?php
+if(isset($_SESSION['client'])){
+    ?>
+    <p style="color:#FF0000; font-weight:bold;">Vous êtes déja connecté</p>
+<?php
+}
 if(isset($_POST['submit'])){
     extract($_POST,EXTR_OVERWRITE);
+    //print "login : ".$username. " et password : ".$mdp;
     $ad = new ClientBD($cnx);
-    $client = $ad->getClient($username, $mdp);
+    $client = $ad->getClient2($username, $mdp);
     //var_dump($admin);
     if($client){
         $_SESSION['client']=1;
-        print "OK";
+        print "Bienvenue ".$username;
     } else{
         $message="Identifiants incorrects";
     }

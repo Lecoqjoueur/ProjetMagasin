@@ -11,35 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/dumps/plpgsql/is_admin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxDetailProduit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Categorie.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/CategorieBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/verifier_connexion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/disconnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/produit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/compte.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/recherche.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/php/verifier_connexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/disconnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/infos.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pc.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/smartphone.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,14 +65,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ProjetMagasin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ProjetMagasin\pages" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\pages" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php\classes" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\dumps\plpgsql" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ProjetMagasin\lib\php" />
+      <recent name="C:\laragon\www\ProjetMagasin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -150,7 +130,8 @@
       <workItem from="1618414911257" duration="91000" />
       <workItem from="1618531831202" duration="662000" />
       <workItem from="1618532803226" duration="1561000" />
-      <workItem from="1618594271294" duration="382000" />
+      <workItem from="1618594271294" duration="3935000" />
+      <workItem from="1618699336596" duration="628000" />
     </task>
     <servers />
   </component>
@@ -170,6 +151,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618594829296">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1618594829296" />
     <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616858591906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,10 +167,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="68" width="702" height="591" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1618413311399" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1618183970754">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1618596779501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1618183970754" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1618596779501" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1617623647195">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,7 +1,7 @@
 
 <?php
-$liste = new ClientBD($cnx);
-$liste -> getClient()
+//$liste = new ClientBD($cnx);
+//$liste -> getClient()
 ?>
 <p>&nbsp;</p>
 <div class="container">
