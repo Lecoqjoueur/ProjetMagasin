@@ -1,5 +1,23 @@
 $(document).ready(function (){
 
+    $('#submit_ids').click(function(){
+        //alert("suppression");
+        var ref = $(id_com).val();
+        //alert(ref);
+        if(ref != '') {
+            var parametre = "ref=" + ref;
+            //alert(parametre);
+            $.ajax({
+                type: 'GET',
+                data: parametre,
+                dataType: 'json',
+                url: './lib/php/ajax/ajaxDeleteCommande.php',
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+        }
+    });
     $('#reference').blur(function(){
         var ref = $(this).val();
         if(ref != ''){
