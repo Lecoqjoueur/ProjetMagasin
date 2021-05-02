@@ -30,11 +30,11 @@ if(isset($_POST['submit'])){
 <form action="<?php print $_SERVER['PHP_SELF'];?>" method="post">
     <div class="mb-3">
         <label for="username" class="form-label">Nom d'utilisateur</label>
-        <input type="username" class="form-control" id="username" name="username">
+        <input type="text" class="form-control" id="username" name="username">
     </div>
     <div class="mb-3">
         <label for="mdp" class="form-label">Mot de passe</label>
-        <input type="mdp" class="form-control" id="mdp" name="mdp">
+        <input type="password" class="form-control" id="mdp" name="mdp">
     </div>
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>

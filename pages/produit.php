@@ -5,6 +5,7 @@ $liste =  $prod->getProduit();
 
 $nbr =count ($liste);
 ?>
+<h2>Produits proposés</h2>
 
             <br>
             <table class="prod1">
@@ -39,4 +40,6 @@ $nbr =count ($liste);
             }
             ?>
             </table>
+
+<a href="http://localhost/ProjetMagasin/pages/print_produit.php" class="btn btn-primary">Voir le catalogue</a>
 

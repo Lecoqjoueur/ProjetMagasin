@@ -31,8 +31,16 @@
 <br>
 <div id="bordure">
     <section>
-        <p>   Adresse : 20 Rue du Commerce 7500 Tournai</p>
-        <p>   Numéro de téléphone: 069/84/50/66</p>
-        <p>   Email adresse: technoshop@email.com</p>
+        <table>
+            <tr>
+                <td>Adresse : </td><td id="d">20 Rue du Commerce 7500 Tournai</td>
+            </tr>
+            <tr>
+                <td>Téléphone: </td><td id="d">069/84/50/66</td>
+            </tr>
+            <tr>
+                <td>Email: </td><td id="d">technoshop@email.com</td>
+            </tr>
+        </table>
     </section>
 </div>

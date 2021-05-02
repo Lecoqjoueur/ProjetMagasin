@@ -72,7 +72,7 @@ class ProduitBD extends Produit
         //$_data = $_resultset->fetchAll();
     }
     public function getAllProduit(){
-        $query = "select * from vue_produits order by id";
+        $query = "select * from produit order by id_prod";
         //$_resultset = $this->_db->query($query);
         $_resultset = $this->_db->prepare($query);
         $_resultset ->execute();
@@ -80,7 +80,7 @@ class ProduitBD extends Produit
             $_data[] = new Produit($d);
 
         }
-        var_dump($_data);
+        //var_dump($_data);
         return $_data;
         //$_data = $_resultset->fetchAll();
 
@@ -139,6 +139,33 @@ class ProduitBD extends Produit
         } catch(PDOException $e){
             print "Echec de la requête : ".$e->getMessage();
             $_db->rollback();
+        }
+    }
+    public function getProduitByRef($ref){
+        try {
+            $this->_db->beginTransaction();
+            $query = "select * from produit where reference = :ref";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':ref', $ref);
+            $resultset->execute();
+            $data = $resultset->fetch();
+            return $data;
+//renvoyer un objet nécéssite adaptation dans ajax pour retour json
+// donc retourner objet simple, qui sera stocké dans un élément de tableau json
+            $this->_db->commit();
+        } catch(PDOException $e){
+            print "Echec de la requête : ".$e->getMessage();
+            $_db->rollback();
+        }
+    }
+    public function updateProduit($champ,$id,$valeur){
+        try{
+            //appeler procedure embarquée
+            $query ="update produit set ".$champ."='".$valeur."'where id_prod='".$id."'";
+            $resultset = $this->_db->prepare($query);//transformer la requete!
+            $resultset->execute();
+        }catch (PDOException $e){
+            print $e->getMessage();
         }
     }
 }
