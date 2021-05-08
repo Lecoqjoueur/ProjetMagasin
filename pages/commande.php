@@ -3,10 +3,20 @@ include ('./lib/php/verifier_connexion.php');
 if(isset($_SESSION['client'])){
 
 $prod = new ProduitBD($cnx);
-
+$commande= new CommandeBD($cnx);
 $liste =  $prod->getProduit();
 
 $nbr =count ($liste);
+    if(isset($_GET['commander'])) {
+        if($quantite>0) {
+
+            $id_p = $liste[$i]->id_prod;
+            $p = $liste[$i]->prix;
+            $p = $p * $quantite;
+            $retour = $commande->ajout_commande($id_p, $p, $quantite);
+            print "retour : " . $retour;
+        }
+    }
 ?>
 
 <br>
@@ -22,6 +32,7 @@ $nbr =count ($liste);
         <table>
             <tr>
                 <select class="com1" name="numero">
+                    <option></option>
                     <?php
                     for($i=0;$i<$nbr;$i++)
                     {
@@ -42,7 +53,7 @@ $nbr =count ($liste);
         </table>
     </fieldset>
     </br>
-       <fieldset class="com">
+       <!--<fieldset class="com">
         <legend>Informations de la carte bancaire</legend>
         </br>
         <fieldset class="com3">
@@ -64,7 +75,7 @@ $nbr =count ($liste);
             <li><label for="porteur">Nom du porteur</label>
                 <input type="text" id ="porteur" name="porteur" placeholder="Meme nom que sur la carte"/></li>
         </ul>
-    </fieldset>
+    </fieldset>-->
     </br>
     <input type="submit" name="commander" value="commander"/>
     <input type="reset" name="annuler" value="Annuler"/>

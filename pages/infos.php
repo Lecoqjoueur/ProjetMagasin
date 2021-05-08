@@ -44,3 +44,6 @@
         </table>
     </section>
 </div>
+<h2>  Images du magasin : </h2>
+<div id="image"><img src="./admin/images/TechnoShop.png" alt="TS">
+</div>

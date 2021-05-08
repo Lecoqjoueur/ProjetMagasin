@@ -3,7 +3,13 @@ $prod = new CommandeBD($cnx);
 
 $liste =  $prod->getCommande();
 
-$nbr =count ($liste);
+$nbr =count($liste);
+if($nbr==0){
+    ?>
+    <h2>Pas de commande en cours</h2>
+    <?php
+}
+else{
 ?>
 
 <h2>Mes commandes:</h2>
@@ -13,7 +19,7 @@ $nbr =count ($liste);
 <table class="prod1" width="90%">
     <tr class="prod2">
         <td class="prod3">
-            Numéro de produit
+            Numéro de commande
         </td>
         <td class="prod3">
             Produit commandé
@@ -70,4 +76,7 @@ $nbr =count ($liste);
     <input type="text" id="id_com" name="id_com">&nbsp;
     <input type="submit" name="submit_ids" value="Supprimer" id="submit_ids">
 </form>
+<?php
+}
+    ?>
 

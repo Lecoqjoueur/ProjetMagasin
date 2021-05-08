@@ -37,8 +37,9 @@ $nbr =count ($liste);
                                 €
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="index.php?page=commande.php" class="btn btn-primary">Commander</a>
+                                <div class="btn-group" id="remove_a">
+                                    <button data-id="<?php print $liste[$i]->id_prod;?>" data-bs-toggle="modal"
+                                            data-bs-target="#info_produit" class="info_produit"> Commander </button>
                                 </div>
                             </div>
                         </div>
@@ -48,6 +49,9 @@ $nbr =count ($liste);
             }
             ?>
         </div>
+        <?php
+        include('./pages/info_produit.php');
+        ?>
     </div>
 </div>
 

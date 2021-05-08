@@ -1,7 +1,7 @@
 <?php
 $prod = new ProduitBD($cnx);
 
-$liste =  $prod->getProduit();
+$liste =  $prod->getAllProduit();
 
 $nbr =count ($liste);
 ?>
@@ -31,15 +31,23 @@ $nbr =count ($liste);
                                 €
                         </td>
                         <td>
-                                <div class="btn-group">
-                                    <a href="index.php?page=commande.php">Commander</a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group" id="remove_a">
+                                    <button data-id="<?php print $liste[$i]->id_prod;?>" data-bs-toggle="modal"
+                                            data-bs-target="#info_produit" class="info_produit"> Commander </button>
                                 </div>
+                            </div>
+
+
                         </td>
                   </tr>
                 <?php
             }
             ?>
             </table>
+<?php
+include('./pages/info_produit.php');
+?>
 
 <a href="http://localhost/ProjetMagasin/pages/print_produit.php" class="btn btn-primary">Voir le catalogue</a>
 

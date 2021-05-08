@@ -33,15 +33,29 @@ class CommandeBD extends Commande
             $_resultset->bindValue('id_com',$id_com);
             $_resultset->execute();
 
-            while ($d=$_resultset->fetch()){
+            /*while ($d=$_resultset->fetch()){
                 $_data[] = new Commande($d);
             }
-            return $_data;
+            return $_data;*/
 
         }catch (PDOException $e){
             print "echec de  la requete ".$e->getMessage();
 
         }
     }
+    public function ajout_commande($id_prod,$PrixTot,$quantité){
+        try{
+            $query="insert into commande (id_prod,PrixTot,quantité) values ";
+            $query.="(:id_prod,:PrixTot,:quantité)";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':id_prod', $id_prod);
+            $_resultset->bindValue(':PrixTot', $PrixTot);
+            $_resultset->bindValue(':quantité', $quantité);
+            $_resultset->execute();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+
 }
 

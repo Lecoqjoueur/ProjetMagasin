@@ -17,7 +17,13 @@
 #d{
     padding-left: 100px;
 }
-#my-image {
-    max-width:150%;
-    height:auto;
+#image {
+    padding-left: 50px;
+    padding-bottom: 300px;
+}
+#bordure{
+
+}
+#formEditAjout{
+    padding-left: 100px;
 }

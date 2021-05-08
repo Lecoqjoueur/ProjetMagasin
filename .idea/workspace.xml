@@ -11,8 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxInfoProduit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/info_produit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dumps/DumpDB/sql16avril.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/TechnoShop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/edit_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/edit_produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infos.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mescommandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mescommandes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pc.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/smartphone.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,16 +75,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ProjetMagasin\lib\php" />
-      <recent name="C:\laragon\www\ProjetMagasin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php\ajax" />
       <recent name="C:\laragon\www\ProjetMagasin\pages" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\pages" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php" />
       <recent name="C:\laragon\www\ProjetMagasin\admin\lib\php\classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ProjetMagasin\lib\php" />
+      <recent name="C:\laragon\www\ProjetMagasin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,6 +158,28 @@
       <workItem from="1619916269684" duration="685000" />
       <workItem from="1619947827073" duration="1533000" />
       <workItem from="1619951962920" duration="1091000" />
+      <workItem from="1619988742244" duration="234000" />
+      <workItem from="1619990843272" duration="348000" />
+      <workItem from="1619992564131" duration="1481000" />
+      <workItem from="1620041213435" duration="612000" />
+      <workItem from="1620047105339" duration="2783000" />
+      <workItem from="1620077477462" duration="348000" />
+      <workItem from="1620080371141" duration="758000" />
+      <workItem from="1620119541950" duration="565000" />
+      <workItem from="1620141085974" duration="676000" />
+      <workItem from="1620158712966" duration="258000" />
+      <workItem from="1620159650215" duration="3295000" />
+      <workItem from="1620165431717" duration="648000" />
+      <workItem from="1620167001340" duration="777000" />
+      <workItem from="1620204449876" duration="3526000" />
+      <workItem from="1620226031473" duration="2459000" />
+      <workItem from="1620236366551" duration="1617000" />
+      <workItem from="1620238359533" duration="331000" />
+      <workItem from="1620241946591" duration="1352000" />
+      <workItem from="1620245654785" duration="65000" />
+      <workItem from="1620299098660" duration="1240000" />
+      <workItem from="1620300493203" duration="493000" />
+      <workItem from="1620463366995" duration="1272000" />
     </task>
     <servers />
   </component>
@@ -186,10 +223,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1618864299774" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619904790529">
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620208743351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1619904790529" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1620208743351" />
+    <state x="274" y="47" key="new project wizard" timestamp="1620141162736">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="47" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1620141162736" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1617623647195">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

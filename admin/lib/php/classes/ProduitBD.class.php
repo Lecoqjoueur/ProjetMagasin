@@ -72,7 +72,7 @@ class ProduitBD extends Produit
         //$_data = $_resultset->fetchAll();
     }
     public function getAllProduit(){
-        $query = "select * from produit order by id_prod";
+        $query = "select * from produit order by reference";
         //$_resultset = $this->_db->query($query);
         $_resultset = $this->_db->prepare($query);
         $_resultset ->execute();
@@ -168,5 +168,41 @@ class ProduitBD extends Produit
             print $e->getMessage();
         }
     }
+    public function mise_a_jourProduit($id_prod,$nom,$prix,$description,$categorie,$reference){
+        try{
+            //$query="update produit set nom=:nom,image=:image,prix=:prix,description=:description,";
+            $query="update produit set nom=:nom,prix=:prix,description=:description,";
+            $query.="categorie=:categorie,reference=:reference where id_prod=:id_prod";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':id_prod', $id_prod);
+            $_resultset->bindValue(':nom', $nom);
+            //$_resultset->bindValue(':image', $image);
+            $_resultset->bindValue(':prix', $prix);
+            $_resultset->bindValue(':description', $description);
+            $_resultset->bindValue(':categorie', $categorie);
+            $_resultset->bindValue(':reference', $reference);
+            $_resultset->execute();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+
+    public function ajout_produit($nom,$categorie,$description,$prix,$image,$reference){
+        try{
+            $query="insert into produit (nom,categorie,description,prix,image,reference) values ";
+            $query.="(:nom,:categorie,:description,:prix,:image,:reference)";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':nom', $nom);
+            $_resultset->bindValue(':categorie', $categorie);
+            $_resultset->bindValue(':description', $description);
+            $_resultset->bindValue(':prix', $prix);
+            $_resultset->bindValue(':image', $image);
+            $_resultset->bindValue(':reference', $reference);
+            $_resultset->execute();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+
 }
 

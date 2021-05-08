@@ -1,6 +1,42 @@
 $(document).ready(function (){
 
-    $('#submit_ids').click(function(){
+    $('#editer_ajouter').text('Mettre à jour ou Nouveau produit');
+
+//blur : perte de focus
+    $('#reference').blur(function(){
+        var ref = $(this).val();
+        if(ref != ''){
+            var parametre="ref="+ref;
+            $.ajax({
+                type: 'GET',
+                data: parametre,
+                dataType: 'json',
+                url: './lib/php/ajax/ajaxRechercheProduit.php',
+                success: function(data){
+                    console.log(data);
+                    $('#denomination').val(data[0].nom);
+                    if($('#denomination').val()!='') {
+                        $('#editer_ajouter').text('Mettre à jour');
+                        $('#action').attr('value','editer');
+                        $('#id_produit').attr('value',data[0].id_prod);
+                    } else {
+                        $('#editer_ajouter').text('Insérer');
+                        $('#action').attr('value','inserer');
+                    }
+                    $('#description').val(data[0].description);
+                    $('#prix').val(data[0].prix);
+                    $('#categorie').val(data[0].categorie);
+                }
+            });
+            $('#reference').click(function(){
+                $('#reference').val('');
+                $('#denomination').val('');
+            })
+        }
+    });
+
+
+    /*$('#submit_ids').click(function(){
         //alert("suppression");
         var ref = $(id_com).val();
         //alert(ref);
@@ -8,7 +44,7 @@ $(document).ready(function (){
             var parametre = "ref=" + ref;
             //alert(parametre);
             $.ajax({
-                type: 'GET',
+                type: 'DELETE',
                 data: parametre,
                 dataType: 'json',
                 url: './lib/php/ajax/ajaxDeleteCommande.php',
@@ -17,7 +53,29 @@ $(document).ready(function (){
                 }
             });
         }
+    });*/
+
+    $('#submit_ids').remove();
+
+    $('#id_com').blur(function(){
+        //alert("suppression");
+        var ref = $(id_com).val();
+        //alert(ref);
+        if(ref != '') {
+            var parametre = "ref=" + ref;
+            alert(parametre);
+            $.ajax({
+                type: 'GET',
+                data: parametre,
+                dataType: 'json',
+                url: './admin/lib/php/ajax/ajaxDeleteCommande.php',
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+        }
     });
+
     $('#reference').blur(function(){
         var ref = $(this).val();
         if(ref != ''){
@@ -132,7 +190,41 @@ $(document).ready(function (){
     });
 
     $('#bordure').css('border','solid 3px #000F');
-    $('#bordure').css('margin','10px 800px 100px 10px');
+    $('#bordure').css('margin','10px 400px 100px 10px');
+
+    $(".info_produit").click(function () {
+        var id = $(this).data('id');//get the id of the selected button
+        var parametre = "id="+id;
+        var retour = $.ajax ({
+            type: 'GET',
+            data: parametre,
+            dataType: 'json',
+            url: "./admin/lib/php/ajax/ajaxInfoProduit.php",
+            success: function(data) {
+                console.log(data);
+                $('.modal-title').html("<b>"+data[0].nom+"</b>");
+                prix = "<br>Pour "+data[0].prix+" € !";
+                $('.modal-body').html("Confirmez votre commande de : "+data[0].nom+" </br><b>"+data[0].description+"</b><br>"+prix);
+            },
+            fail: function(){
+                console.log("fail");
+            }
+        });
+
+    });
+
+    //traitement de la mise dans le panier à partir de la fenêtre modale info_produit.php
+    $('#clic_panier').click(function () {
+        //un effet blink sur le panier lorsque cliqué
+        $(this).fadeOut(200).fadeIn(200);
+        //on relève la quantité sélectionnée dans la liste déroulante
+        var cb = $('#quantite option:selected').val();
+        //on récupère l'id du produit
+        var id = $(".info_produit").data('id');
+        //ajax : on place dans un panier (au moins temporaire)
+        //...
+
+    });
 
     });
 
