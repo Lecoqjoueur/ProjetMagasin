@@ -37,12 +37,18 @@ $nbr =count ($liste);
                                 ?>
                                 €
                             </p>
+                            <?php
+                            if(isset($_SESSION['client'])){
+                            ?>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group" id="remove_a">
                                     <button data-id="<?php print $liste[$i]->id_prod;?>" data-bs-toggle="modal"
                                             data-bs-target="#info_produit" class="info_produit"> Commander </button>
                                 </div>
                             </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>

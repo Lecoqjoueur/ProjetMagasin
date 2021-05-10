@@ -26,6 +26,28 @@ class CommandeBD extends Commande
         return $_data;
         //$_data = $_resultset->fetchAll();
     }
+
+    public function getCommandebyIDProd($id_prod)
+    {
+        try {
+            $this->_db->beginTransaction();
+            $query = "select * from produit where id_prod = :id_prod";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':id_prod', $id_prod);
+            $resultset->execute();
+            $data = $resultset->fetch();
+            return $data;
+            //renvoyer un objet nécéssite adaptation dans ajax pour retour json
+            // donc retourner objet simple, qui sera stocké dans un élément de tableau json
+
+            $this->_db->commit();
+
+        } catch(PDOException $e){
+            print "Echec de la requête : ".$e->getMessage();
+            $_db->rollback();
+        }
+    }
+
     public function DeleteCommande ($id_com){
         try{
             $query="delete from commande where id_com= :id_com";
@@ -43,14 +65,13 @@ class CommandeBD extends Commande
 
         }
     }
-    public function ajout_commande($id_prod,$PrixTot,$quantité){
+    public function ajout_commande($id_prod,$quantite){
         try{
-            $query="insert into commande (id_prod,PrixTot,quantité) values ";
-            $query.="(:id_prod,:PrixTot,:quantité)";
+            $query="insert into commande (id_prod,quantite) values ";
+            $query.="(:id_prod,:quantite)";
             $_resultset = $this->_db->prepare($query);
             $_resultset->bindValue(':id_prod', $id_prod);
-            $_resultset->bindValue(':PrixTot', $PrixTot);
-            $_resultset->bindValue(':quantité', $quantité);
+            $_resultset->bindValue(':quantite', $quantite);
             $_resultset->execute();
         }catch(PDOException $e){
             print $e->getMessage();

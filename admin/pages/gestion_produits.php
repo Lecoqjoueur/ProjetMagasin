@@ -52,3 +52,9 @@ $nbr=count($liste);
   ?>
   </tbody>
 </table>
+<h4>Supprimer un produit : </h4>
+<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+    <label for="id_prods">Numéro de produit : </label>
+    <input type="text" id="id_prods" name="id_prods">&nbsp;
+    <input type="submit" name="submit_idp" value="Supprimer" id="submit_idp">
+</form>

@@ -14,6 +14,12 @@ $nbr =count ($liste);
             ?>
 
                   <tr class="prod2">
+                      <td class="prod3">
+                          <?php
+                          print $liste[$i]->id_prod;
+                          ?>
+                      </td>
+
                         <td class="prod3">
                                 <?php
                                 print $liste[$i]->nom;
@@ -30,6 +36,9 @@ $nbr =count ($liste);
                                 ?>
                                 €
                         </td>
+                      <?php
+                      if(isset($_SESSION['client'])){
+                          ?>
                         <td>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group" id="remove_a">
@@ -37,9 +46,10 @@ $nbr =count ($liste);
                                             data-bs-target="#info_produit" class="info_produit"> Commander </button>
                                 </div>
                             </div>
-
-
                         </td>
+                      <?php
+                      }
+                      ?>
                   </tr>
                 <?php
             }

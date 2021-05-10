@@ -86,6 +86,24 @@ class ProduitBD extends Produit
 
     }
 
+    public function DeleteProduit ($id_prod){
+        try{
+            $query="delete from produit where id_prod= :id_prod";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue('id_prod',$id_prod);
+            $_resultset->execute();
+
+            /*while ($d=$_resultset->fetch()){
+                $_data[] = new Commande($d);
+            }
+            return $_data;*/
+
+        }catch (PDOException $e){
+            print "echec de  la requete ".$e->getMessage();
+
+        }
+    }
+
     public function getProduits ($id_cat){
         try{
             $query="select * from vue_produits where id= :id";

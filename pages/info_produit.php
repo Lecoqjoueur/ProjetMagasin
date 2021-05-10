@@ -1,3 +1,14 @@
+<?php
+$commande= new CommandeBD($cnx);
+if(isset($_GET['clic_panier'])){
+    extract($_GET,EXTR_OVERWRITE);
+    $commande->ajout_commande($id_prod,$quantite);
+
+}
+
+
+?>
+
 <div class="modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -32,7 +43,7 @@
                 <select name="quantite" id="quantite">
                     <?php
                     for ($i = 1; $i < 21; $i++) {
-                        ?>                        <option id="combien" value="<?php print $i; ?>"><?php print $i; ?></option>
+                        ?>                        <option id="quantite" value="<?php print $i; ?>"><?php print $i; ?></option>
                         <?php
                     }
                     ?>                </select>

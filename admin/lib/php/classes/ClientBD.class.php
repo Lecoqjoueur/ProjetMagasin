@@ -38,5 +38,22 @@ class ClientBD extends Client
             print "Echec ".$e->getMessage();
         }
     }
+
+    public function ajout_client($username,$mdp,$adresse,$tel,$email,$cp){
+        try{
+            $query="insert into client (username,mdp,adresse,tel,email,cp) values ";
+            $query.="(:username,:mdp,:adresse,:tel,:email,:cp)";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':username', $username);
+            $_resultset->bindValue(':mdp', $mdp);
+            $_resultset->bindValue(':adresse', $adresse);
+            $_resultset->bindValue(':tel', $tel);
+            $_resultset->bindValue(':email', $email);
+            $_resultset->bindValue(':cp', $cp);
+            $_resultset->execute();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
 }
 

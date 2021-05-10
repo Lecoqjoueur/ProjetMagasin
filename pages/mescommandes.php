@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors','off');
 $prod = new CommandeBD($cnx);
 
 $liste =  $prod->getCommande();
@@ -6,7 +7,8 @@ $liste =  $prod->getCommande();
 $nbr =count($liste);
 if($nbr==0){
     ?>
-    <h2>Pas de commande en cours</h2>
+
+    <h3>Pas de commande en cours</h3>
     <?php
 }
 else{
@@ -55,15 +57,15 @@ else{
             </td>
             <td class="prod3">
                 <?php
-                print $liste[$i]->prix;
+                print ($liste[$i]->prix * $liste[$i]->quantité);
                 ?>
                 €
             </td>
-            <td>
+            <!--<td>
                 <div class="btn-group">
                     <a href="">Annuler</a>
                 </div>
-            </td>
+            </td>-->
         </tr>
         <?php
     }

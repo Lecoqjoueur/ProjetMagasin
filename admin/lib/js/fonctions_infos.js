@@ -55,6 +55,11 @@ $(document).ready(function (){
         }
     });*/
 
+    $('#clic_panier').click(function (){
+        var ref=$(quantite).val();
+        alert("commande de "+ref+" produit(s) effectué(s)");
+    });
+
     $('#submit_ids').remove();
 
     $('#id_com').blur(function(){
@@ -63,7 +68,7 @@ $(document).ready(function (){
         //alert(ref);
         if(ref != '') {
             var parametre = "ref=" + ref;
-            alert(parametre);
+            alert("suppression de la commande "+parametre+" effectué");
             $.ajax({
                 type: 'GET',
                 data: parametre,
@@ -71,6 +76,26 @@ $(document).ready(function (){
                 url: './admin/lib/php/ajax/ajaxDeleteCommande.php',
                 success: function(data) {
                     console.log(data);
+                }
+            });
+        }
+    });
+
+    $('#submit_idp').click(function(){
+        //alert("suppression");
+        var ref = $(id_prods).val();
+        //alert(ref);
+        if(ref != '') {
+            var parametre = "ref=" + ref;
+
+            $.ajax({
+                type: 'GET',
+                data: parametre,
+                dataType: 'json',
+                url: './lib/php/ajax/ajaxDeleteProduit.php',
+                success: function(data) {
+                    console.log(data);
+                    alert("suppression du produit "+parametre+" effectué");
                 }
             });
         }
