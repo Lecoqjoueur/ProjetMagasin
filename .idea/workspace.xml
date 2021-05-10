@@ -11,23 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxDeleteProduit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxRechercheCommandebyIDProd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/gestion_produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_produits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/compte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info_produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/mescommandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mescommandes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pc.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/smartphone.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/smartphone.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +174,7 @@
       <workItem from="1620587194457" duration="489000" />
       <workItem from="1620594221069" duration="1679000" />
       <workItem from="1620596880251" duration="598000" />
+      <workItem from="1620645583357" duration="1050000" />
     </task>
     <servers />
   </component>
