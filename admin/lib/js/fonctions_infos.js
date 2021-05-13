@@ -55,10 +55,6 @@ $(document).ready(function (){
         }
     });*/
 
-    $('#clic_panier').click(function (){
-        var ref=$(quantite).val();
-        alert("commande de "+ref+" produit(s) effectué(s)");
-    });
 
     $('#submit_ids').remove();
 
@@ -95,7 +91,7 @@ $(document).ready(function (){
                 url: './lib/php/ajax/ajaxDeleteProduit.php',
                 success: function(data) {
                     console.log(data);
-                    alert("suppression du produit "+parametre+" effectué");
+                    alert("suppression du produit "+parametre+" effectué si aucune commande est en cours");
                 }
             });
         }
@@ -173,6 +169,7 @@ $(document).ready(function (){
 
     $('#submit_id').remove();
     $('#submit_id').remove();
+    $('#submit_id').remove();
 
     $('#id').blur(function(){
         //on relève la valeur entrée dans l'input
@@ -192,6 +189,26 @@ $(document).ready(function (){
             }
         });
     });
+
+    $('#nom').blur(function(){
+        //on relève la valeur entrée dans l'input
+        var nom = $(this).val(); //val() : uniquement pour les inputs
+        //alert("id : "+id);
+        var parametre = "nom="+nom;
+        $.ajax({
+            type: 'GET',
+            data: parametre, //ce qui est envoyé à ajaxProduitDetail
+            datatype: 'json',
+            url: './admin/lib/php/ajax/ajaxInfoProduit2.php',
+            success: function(data) { //data : ce qui est reçu de ajaxProduitDetail
+                //console.log(data);
+                $('#id_prod').html("<br>"+data[0].nom+"<br>"+data[0].description);
+                $('#photo').html('<img src="admin/images/'+data[0].image+'" alt="Illustration">');
+
+            }
+        });
+    });
+
     $('#choix_produit').change(function (){
         //recuperer la valeur de l'attribut name (pour le php)
         var attribut = $(this).attr('name');
@@ -227,6 +244,7 @@ $(document).ready(function (){
             url: "./admin/lib/php/ajax/ajaxInfoProduit.php",
             success: function(data) {
                 console.log(data);
+                $('.id_prod').text(id);
                 $('.modal-title').html("<b>"+data[0].nom+"</b>");
                 prix = "<br>Pour "+data[0].prix+" € !";
                 $('.modal-body').html("Confirmez votre commande de : "+data[0].nom+" </br><b>"+data[0].description+"</b><br>"+prix);
@@ -235,9 +253,7 @@ $(document).ready(function (){
                 console.log("fail");
             }
         });
-
     });
-
     //traitement de la mise dans le panier à partir de la fenêtre modale info_produit.php
     $('#clic_panier').click(function () {
         //un effet blink sur le panier lorsque cliqué
@@ -245,9 +261,23 @@ $(document).ready(function (){
         //on relève la quantité sélectionnée dans la liste déroulante
         var cb = $('#quantite option:selected').val();
         //on récupère l'id du produit
-        var id = $(".info_produit").data('id');
+        var id = $(".id_prod").text();
+        var username= $('.username').text();
+        var id_client = $(".id_client").text();
+        //alert("id : "+id);
         //ajax : on place dans un panier (au moins temporaire)
-        //...
+        var parametre = "id_prod="+id+"&qte="+cb+"&id_client="+id_client;
+        alert(parametre);
+        $.ajax({
+            type: 'GET',
+            data: parametre,
+            datatype: 'json',
+            url: "./admin/lib/php/ajax/ajaxAjoutCommande.php",
+            success: function (data){
+                alert("commande reussite");
+            }
+
+        })
 
     });
 

@@ -1,10 +1,11 @@
 <?php
 $prod = new ProduitBD($cnx);
-
 $liste =  $prod->getAllProduit();
-
+//$username=$_SESSION['username'];
+//print $username;
 $nbr =count ($liste);
 ?>
+
 <h2>Produits proposés</h2>
 
             <br>
@@ -14,11 +15,6 @@ $nbr =count ($liste);
             ?>
 
                   <tr class="prod2">
-                      <td class="prod3">
-                          <?php
-                          print $liste[$i]->id_prod;
-                          ?>
-                      </td>
 
                         <td class="prod3">
                                 <?php

@@ -1,9 +1,9 @@
 <?php
+include ('./lib/php/verifier_connexion.php');
 ini_set('display_errors','off');
 $prod = new CommandeBD($cnx);
 
-$liste =  $prod->getCommande();
-
+$liste =  $prod->getCommandeByUser($_SESSION['username']);
 $nbr =count($liste);
 if($nbr==0){
     ?>

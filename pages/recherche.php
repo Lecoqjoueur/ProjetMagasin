@@ -9,6 +9,9 @@ $nbr= count($liste);
     <label for="id">Identifiant : </label>
     <input type="text" id="id" name="id">&nbsp;
     <input type="submit" name="submit_id" value="Chercher" id="submit_id">
+    <label for="nom">Nom Produit : </label>
+    <input type="text" id="nom" name="nom">&nbsp;
+    <input type="submit" name="submit_id" value="Chercher" id="submit_id">
     <select name="choix_produit" id="choix_produit">
         <option value="">Choisissez</option>
         <?php

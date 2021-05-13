@@ -1,13 +1,4 @@
-<?php
-$commande= new CommandeBD($cnx);
-if(isset($_GET['clic_panier'])){
-    extract($_GET,EXTR_OVERWRITE);
-    $commande->ajout_commande($id_prod,$quantite);
 
-}
-
-
-?>
 
 <div class="modal" tabindex="-1">
     <div class="modal-dialog">
@@ -35,6 +26,7 @@ if(isset($_GET['clic_panier'])){
                 <h5 class="modal-title" id="infoModalLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <span class="id_client cacher"><?php print $_SESSION['username'];?></span>
             <div class="modal-body">
                 <div id="details_produit">
                 </div>

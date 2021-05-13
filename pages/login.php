@@ -5,7 +5,7 @@
 <?php
 if(isset($_SESSION['client'])){
     ?>
-    <p style="color:#FF0000; font-weight:bold;">Vous êtes déja connecté</p>
+    <p style="color:#FF0000; font-weight:bold;">Vous êtes déja connecté : <?php echo $_SESSION['username']?></p>
 <?php
 }
 if(isset($_POST['submit'])){
@@ -16,7 +16,12 @@ if(isset($_POST['submit'])){
     //var_dump($admin);
     if($client){
         $_SESSION['client']=1;
-        print "Bienvenue ".$username;
+        $_SESSION['username']=$username;
+        ?>
+        <p style="color:green; font-weight:bold;">Bienvenue : <?php echo $_SESSION['username']?></p>
+        ?>
+        <meta http-equiv="refresh": content="2;URL=index.php?page=accueil.php">
+        <?php
     } else{
         $message="Identifiants incorrects";
     }

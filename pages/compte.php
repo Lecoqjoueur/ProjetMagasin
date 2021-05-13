@@ -8,6 +8,9 @@ if(isset($_GET['commander'])) {
     if (!empty($username) && !empty($mdp) && !empty($adresse) && !empty($tel) && !empty($email) && $cp>0) {
         $client->ajout_client($username, $mdp, $adresse, $tel, $email, $cp);
         print ("Bienvenue");
+        ?>
+        <meta http-equiv="refresh": content="2;URL=index.php?page=accueil.php">
+<?php
     }
     else{
         print ("informations manquantes ou éronnées");

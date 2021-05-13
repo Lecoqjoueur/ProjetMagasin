@@ -42,8 +42,9 @@ $nbr=count($liste);
             </td>
             <td>
                 <span contenteditable="true" name="prix" id="<?php print $liste[$i]->id_prod;?>">
-                <?php print $liste[$i]->prix;?> €
+                <?php print $liste[$i]->prix;?>
                  </span>
+                €
             </td>
 
         </tr>

@@ -5,7 +5,6 @@ if(isset($_SESSION['client'])){
     $prod = new ProduitBD($cnx);
     $commande= new CommandeBD($cnx);
     $liste =  $prod->getProduit();
-
     $nbr =count ($liste);
     if(isset($_GET['commander'])) {
         //var_dump($_GET);
@@ -15,7 +14,7 @@ if(isset($_SESSION['client'])){
             //   $p = $liste[$i]->prix;
             //   $p = $p * $quantite;
             // $retour = $commande->ajout_commande($id_p, $p, $quantite);
-            $commande->ajout_commande($id_prod,$quantite);
+            $commande->ajout_commande($id_prod,$quantite,$_SESSION['username']);
             print ("Commande effectué");
             //print "retour : " . $retour;
         }

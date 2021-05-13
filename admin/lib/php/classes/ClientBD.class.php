@@ -39,6 +39,21 @@ class ClientBD extends Client
         }
     }
 
+    public function getClientID($username, $mdp){
+        try {
+            $query = "select id from client where username =:username and mdp =:mdp";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':username', $username);
+            $_resultset->bindValue(':mdp', $mdp);
+            $_resultset->execute();
+            $_data[0] =$_resultset->fetch();
+            //var_dump($_data[0]);
+            return $_data;
+        }catch(PDOException $e){
+            print "Echec ".$e->getMessage();
+        }
+    }
+
     public function ajout_client($username,$mdp,$adresse,$tel,$email,$cp){
         try{
             $query="insert into client (username,mdp,adresse,tel,email,cp) values ";

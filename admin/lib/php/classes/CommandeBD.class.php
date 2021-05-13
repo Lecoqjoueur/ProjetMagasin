@@ -26,6 +26,23 @@ class CommandeBD extends Commande
         return $_data;
         //$_data = $_resultset->fetchAll();
     }
+    public function getCommandeByUser($username)
+    {
+        $query = "select * from vue_commande where username=:username";
+        //$_resultset = $this->_db->query($query);
+        $_resultset = $this->_db->prepare($query);
+        $_resultset->bindValue(':username', $username);
+        $_resultset->execute();
+
+        while ($d = $_resultset->fetch()) {
+            $_data[] = new Commande($d);
+
+        }
+        //var_dump($_data);
+        return $_data;
+        //$_data = $_resultset->fetchAll();
+    }
+
 
     public function getCommandebyIDProd($id_prod)
     {
@@ -65,13 +82,14 @@ class CommandeBD extends Commande
 
         }
     }
-    public function ajout_commande($id_prod,$quantite){
+    public function ajout_commande($id_prod,$quantite,$username){
         try{
-            $query="insert into commande (id_prod,quantite) values ";
-            $query.="(:id_prod,:quantite)";
+            $query="insert into commande (id_prod,quantite,username) values ";
+            $query.="(:id_prod,:quantite,:username)";
             $_resultset = $this->_db->prepare($query);
             $_resultset->bindValue(':id_prod', $id_prod);
             $_resultset->bindValue(':quantite', $quantite);
+            $_resultset->bindValue(':username', $username);
             $_resultset->execute();
         }catch(PDOException $e){
             print $e->getMessage();

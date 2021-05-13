@@ -24,6 +24,11 @@
 #bordure{
 
 }
+
+.cacher{
+    visibility: hidden;
+}
+
 #formEditAjout{
     padding-left: 100px;
 }
