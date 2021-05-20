@@ -7,17 +7,16 @@ if(isset($_GET['commander'])) {
         extract($_GET, EXTR_OVERWRITE);
     if (!empty($username) && !empty($mdp) && !empty($adresse) && !empty($tel) && !empty($email) && $cp>0) {
         $client->ajout_client($username, $mdp, $adresse, $tel, $email, $cp);
-        print ("Bienvenue");
+        ?>
+        <p style="color:green; font-weight:bold;">Bienvenue sur TechnoShop <?php $username ?></p>
+        <?php
         ?>
         <meta http-equiv="refresh": content="2;URL=index.php?page=accueil.php">
 <?php
     }
     else{
-        print ("informations manquantes ou éronnées");
+        print ("*** informations manquantes ou éronnées ***");
     }
-}
-else{
-    print ("informations manquantes");
 }
 
 ?>
@@ -51,7 +50,7 @@ else{
             <input type="text" class="form-control" id="email" name="email">
         </div>
         <br>
-        <input type="submit" name="commander" value="commander"/>
+        <input type="submit" name="commander" value="Creer"/>
         <input type="reset" name="annuler" value="Annuler"/>
     </form>
 

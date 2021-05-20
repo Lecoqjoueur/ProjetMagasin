@@ -15,11 +15,13 @@ if(isset($_SESSION['client'])){
             //   $p = $p * $quantite;
             // $retour = $commande->ajout_commande($id_p, $p, $quantite);
             $commande->ajout_commande($id_prod,$quantite,$_SESSION['username']);
-            print ("Commande effectué");
+            ?>
+            <p style="color:green; font-weight:bold;">Commande effectué</p>
+            <?php
             //print "retour : " . $retour;
         }
         else{
-            print ("Quantité choisi incorrect");
+            print ("Informations incorrects ou manquantes");
         }
     }
     ?>
@@ -28,6 +30,7 @@ if(isset($_SESSION['client'])){
     <div class="btn-group">
         <a href="index.php?page=mescommandes.php" class="btn btn-primary">Voir mes commandes</a>
     </div>
+    <br>
     <form method="GET" action="<?php print $_SERVER['PHP_SELF'];?>">
         </br>
         <p>*Veuillez remplir tous les champs avant de confirmer*</p>

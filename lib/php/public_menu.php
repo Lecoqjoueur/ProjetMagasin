@@ -9,8 +9,16 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.php?page=accueil.php">Accueil</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=login.php">Compte</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Compte
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.php?page=login.php">Connexion</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=compte.php">Créer un compte</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="admin/index.php?page=accueil_admin.php">Compte Admin</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,8 +33,14 @@
                         <li><a class="dropdown-item" href="index.php?page=recherche.php">Rechercher</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php?page=commande.php">Effectuer une commande</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Commander
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.php?page=commande.php">Effectuer une commande</a></li>
+                        <li><a class="dropdown-item" href="index.php?page=mescommandes.php">Afficher mes commandes</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.php?page=infos.php">Coordonnées</a>

@@ -27,7 +27,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>-->
 
-<h2>  Informations sur le magasin</h2>
+<h2>  Informations sur le magasin :</h2>
 <br>
 <div id="bordure">
     <section>

@@ -10,7 +10,9 @@ if(isset($_GET['editer_ajouter'])){
         if(!empty($reference) && !empty($nom) && !empty($description) && !empty($prix) && !empty($categorie) ){
             //3 instructions artificielles (devraient arriver d'un formulaire plus complet) :
             $produit->mise_a_jourProduit($id_produit,$nom,$prix,$description,$categorie,$reference);
-
+            ?>
+            <p style="color:green; font-weight:bold;">Modification effectué</p>
+            <?php
         }
     } else if($_GET['action'] == "inserer") {
         ?><pre><?php     //var_dump($_GET);     ?></pre><?php
@@ -18,20 +20,22 @@ if(isset($_GET['editer_ajouter'])){
 
 
         if(!empty($reference) && !empty($nom) && !empty($description) && !empty($prix) && !empty($categorie) ){
-            print "ici";
+            //print "ici";
             //3 instructions artificielles (devraient arriver d'un formulaire plus complet) :
             if(empty($image)) {
                 $image = 'placeholder.png';
             }
             $retour=$produit->ajout_produit($nom,$categorie,$description,$prix,$image,$reference);
-            print "retour : ".$retour;
+            ?>
+            <p style="color:green; font-weight:bold;">Ajout effectué</p>
+            <?php
         }
     }
 
 }
 ?>
 
-<form class="row g-3" method="get" action="<?php print $_SERVER['PHP_SELF'];?>" id="formEditAjout">
+<form class="row g-3" method="get" action="<?php print $_SERVER['PHP_SELF'];?>" id="formEditAjout" enctype="multipart/form-data">
     <div class="col-md-2">
         <label for="reference" class="form-label">Référence</label>
         <input type="text" class="form-control" id="reference" name="reference">
@@ -67,7 +71,7 @@ if(isset($_GET['editer_ajouter'])){
     </div>
     <div>
         <label for="image" class="form-label">Image :</label>
-        <input type="file" name="image" id="image">
+        <input type="file" class="form-control-file" name="image" id="image">
     </div>
 </form>
 

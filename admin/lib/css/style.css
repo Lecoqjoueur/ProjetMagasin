@@ -2,6 +2,7 @@
     background-color:lightgray;
     margin :10px 50px ;
     padding :15px 10px;
+    border: solid black 2px;
 }
 .prod1{
     border:solid 1px #000F;
@@ -23,6 +24,9 @@
 }
 #bordure{
 
+}
+#rouge{
+    color: #CC0000;
 }
 
 .cacher{

@@ -91,7 +91,7 @@ $(document).ready(function (){
                 url: './lib/php/ajax/ajaxDeleteProduit.php',
                 success: function(data) {
                     console.log(data);
-                    alert("suppression du produit "+parametre+" effectué si aucune commande est en cours");
+                    alert("suppression du produit "+parametre+" effectué");
                 }
             });
         }
@@ -267,7 +267,7 @@ $(document).ready(function (){
         //alert("id : "+id);
         //ajax : on place dans un panier (au moins temporaire)
         var parametre = "id_prod="+id+"&qte="+cb+"&id_client="+id_client;
-        alert(parametre);
+        //alert(parametre);
         $.ajax({
             type: 'GET',
             data: parametre,

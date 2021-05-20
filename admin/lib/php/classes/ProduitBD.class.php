@@ -85,6 +85,20 @@ class ProduitBD extends Produit
         //$_data = $_resultset->fetchAll();
 
     }
+    public function getAllProduit2(){
+        $query = "select * from produit where id_prod not in (select id_prod from commande)";
+        //$_resultset = $this->_db->query($query);
+        $_resultset = $this->_db->prepare($query);
+        $_resultset ->execute();
+        while ($d = $_resultset->fetch()){
+            $_data[] = new Produit($d);
+
+        }
+        //var_dump($_data);
+        return $_data;
+        //$_data = $_resultset->fetchAll();
+
+    }
 
     public function DeleteProduit ($id_prod){
         try{

@@ -1,4 +1,4 @@
-<h1>Bienvenue dans la partie "Connexion au Compte"</h1>
+<h1>Connexion au Compte</h1>
 <header class="img_header">
     <a href="index.php?page=disconnect.php">Déconnexion</a>
 </header>
@@ -19,7 +19,6 @@ if(isset($_POST['submit'])){
         $_SESSION['username']=$username;
         ?>
         <p style="color:green; font-weight:bold;">Bienvenue : <?php echo $_SESSION['username']?></p>
-        ?>
         <meta http-equiv="refresh": content="2;URL=index.php?page=accueil.php">
         <?php
     } else{
@@ -45,8 +44,7 @@ if(isset($_POST['submit'])){
 </form>
 
     <br>
-    <a href="index.php?page=compte.php" class="btn btn-primary">Créer un compte</a>
-    <a href="admin/index.php?page=accueil_admin.php" class="btn btn-primary">Compte Admin</a>
+
     <br>
 
 </div>

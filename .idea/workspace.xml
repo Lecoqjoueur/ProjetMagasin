@@ -11,21 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793fb826-5051-4891-9288-00e0a6726be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxAjoutCommande.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxInfoProduit2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxRechercheCommandebyIDProd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/CommandeBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/edit_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/edit_produit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/gestion_produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_produits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/compte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info_produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infos.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/mescommandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mescommandes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/print_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/print_produit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/recherche.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recherche.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,6 +204,23 @@
       <workItem from="1620858236983" duration="1182000" />
       <workItem from="1620915023936" duration="667000" />
       <workItem from="1620931176218" duration="184000" />
+      <workItem from="1621069486533" duration="2534000" />
+      <workItem from="1621090252260" duration="541000" />
+      <workItem from="1621090809528" duration="782000" />
+      <workItem from="1621091756394" duration="363000" />
+      <workItem from="1621118195698" duration="369000" />
+      <workItem from="1621194100664" duration="1866000" />
+      <workItem from="1621265681147" duration="407000" />
+      <workItem from="1621358998423" duration="1702000" />
+      <workItem from="1621360739907" duration="902000" />
+      <workItem from="1621375110614" duration="1259000" />
+      <workItem from="1621435651675" duration="2171000" />
+      <workItem from="1621464423140" duration="493000" />
+      <workItem from="1621465096142" duration="525000" />
+      <workItem from="1621531906819" duration="1325000" />
+      <workItem from="1621541697677" duration="575000" />
+      <workItem from="1621542282892" duration="39000" />
+      <workItem from="1621546189793" duration="1652000" />
     </task>
     <servers />
   </component>

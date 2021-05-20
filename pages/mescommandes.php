@@ -74,8 +74,19 @@ else{
 <br>
 <h4>Supprimer une commande : </h4>
 <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
-    <label for="id">Numéro de commande : </label>
-    <input type="text" id="id_com" name="id_com">&nbsp;
+    <label for="id_com">Numéro de commande : </label>
+    <select class="com1" name="id_com" id="id_com">
+        <option>Numéro de commande</option>
+        <?php
+        for($i=0;$i<$nbr;$i++)
+        {
+            ?><option value="<?php print $liste[$i]->id_com;?>"><?php
+            print "commande numéro : ".$liste[$i]->id_com;
+            ?></option>
+            <?php
+        }
+        ?>
+    </select>
     <input type="submit" name="submit_ids" value="Supprimer" id="submit_ids">
 </form>
 <?php

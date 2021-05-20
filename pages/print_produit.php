@@ -15,14 +15,17 @@ $pdf = new TCPDF('P','mm','A4');
 
 $pdf->AddPage();
 $pdf->SetFont('times','B',15);
-$pdf->SetTextColor(255,0,0);
-$pdf->Cell(190,10,'Notre Assortiment',1,1,'C');
+$pdf->SetTextColor(0,0,255);
+$pdf->Cell(190,10,'Catalogue de TechnoShop',1,1,'C');
 $pdf->SetFont('times','',12);
 $pdf->SetTextColor(0,0,0);
-$x =20;
-$y=50;
+$x =30;
+$x2=90;
+$y=40;
 for($i =0;$i<$nbr;$i++){
-    $pdf->WriteHTMLCell(150,30,$x,$y,$liste[$i]->nom,1,1,'','','L');
+    $pdf->WriteHTMLCell(110,0,$x,$y,$liste[$i]->nom,1,1,'','','L');
+    $pdf->WriteHTMLCell(50,0,$x2,$y,$liste[$i]->prix,1,1,'','','L');
+
     $y+=10;
 }
 $pdf->Output();

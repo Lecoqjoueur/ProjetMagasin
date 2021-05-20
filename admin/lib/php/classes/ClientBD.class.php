@@ -31,9 +31,9 @@ class ClientBD extends Client
             $_resultset->bindValue(':username', $username);
             $_resultset->bindValue(':mdp', $mdp);
             $_resultset->execute();
-            $_data[0] =$_resultset->fetch();
+            $retour =$_resultset->fetchColumn(0);
             //var_dump($_data[0]);
-            return $_data;
+            return $retour;
         }catch(PDOException $e){
             print "Echec ".$e->getMessage();
         }

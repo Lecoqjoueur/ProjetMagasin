@@ -13,7 +13,7 @@
                     <a class="nav-link" href="index.php?page=gestion_produits.php">Gestion des produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=edit_produit.php">Ajouter un produit</a>
+                    <a class="nav-link" href="index.php?page=edit_produit.php">Ajouter/Editer un produit</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../index.php?page=accueil.php">Retour dans la partie client</a>
