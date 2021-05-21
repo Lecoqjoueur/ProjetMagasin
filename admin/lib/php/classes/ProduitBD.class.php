@@ -219,6 +219,26 @@ class ProduitBD extends Produit
         }
     }
 
+    public function mise_a_jourProduit2($id_prod,$nom,$prix,$description,$categorie,$image,$reference){
+        try{
+            //$query="update produit set nom=:nom,image=:image,prix=:prix,description=:description,";
+            $query="update produit set nom=:nom,prix=:prix,description=:description,";
+            $query.="categorie=:categorie,image=:image,reference=:reference where id_prod=:id_prod";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':id_prod', $id_prod);
+            $_resultset->bindValue(':nom', $nom);
+            //$_resultset->bindValue(':image', $image);
+            $_resultset->bindValue(':prix', $prix);
+            $_resultset->bindValue(':description', $description);
+            $_resultset->bindValue(':categorie', $categorie);
+            $_resultset->bindValue(':image', $image);
+            $_resultset->bindValue(':reference', $reference);
+            $_resultset->execute();
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+    }
+
     public function ajout_produit($nom,$categorie,$description,$prix,$image,$reference){
         try{
             $query="insert into produit (nom,categorie,description,prix,image,reference) values ";

@@ -9,7 +9,12 @@ if(isset($_GET['editer_ajouter'])){
         ?><pre><?php     //var_dump($_GET);     ?></pre><?php
         if(!empty($reference) && !empty($nom) && !empty($description) && !empty($prix) && !empty($categorie) ){
             //3 instructions artificielles (devraient arriver d'un formulaire plus complet) :
-            $produit->mise_a_jourProduit($id_produit,$nom,$prix,$description,$categorie,$reference);
+            if(empty($image)) {
+                $produit->mise_a_jourProduit($id_produit, $nom, $prix, $description, $categorie, $reference);
+            }
+            else{
+                $produit->mise_a_jourProduit2($id_produit, $nom, $prix, $description, $categorie,$image, $reference);
+            }
             ?>
             <p style="color:green; font-weight:bold;">Modification effectué</p>
             <?php
